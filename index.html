@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Test Player </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="scripts.js"></script>
+		<script type="text/javascript">
+       		setInterval(refreshIframe2, 20000);
+       		function refreshIframe2() {
+           	var frame = document.getElementById("Frame2");
+           	frame.src = frame.src;
+       		}
+   		</script>
+	</head>
+	<body>
+		<div class="player">
+			<div class="disk">
+				<div class="dsk">
+					<img id="loading" src="disc.png">
+				</div>
+				<div class="dsk" style="margin-left: 2.20%;">
+					<img id="loading2" src="disc.png">
+				</div>
+			</div>
+			<div class="mainImg">
+				<img src="main.png">	
+			</div>					
+			<div class="text">
+				<h2 id="durtext">H</h2>	
+			</div>
+		</div>
+		<div class="control" id="cont">
+				<img id="play_pause" onclick="playFun()" src="play.png">
+		</div>
+	</body> 
+</html>
